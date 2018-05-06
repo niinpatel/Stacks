@@ -40,5 +40,20 @@ class Stack {
 
     }
 
+
+    // search a value in stack
+    search(value){
+
+        for(let i = 0, length = this.items.length; i < length; i++){
+
+            if(this.items[i] === value) {
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+
 }
 
